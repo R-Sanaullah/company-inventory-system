@@ -1,0 +1,20 @@
+public class perishableproduct extends Product {
+    
+    private int Shelflifedays;
+    
+    public perishableproduct(int id,String name,double unitprice,int s){
+        super(id,name,unitprice);
+        Shelflifedays=s;
+}
+    public void setShelflifedays(int s){
+        Shelflifedays=s;
+    }
+    public int getShelflifedays(){
+        return Shelflifedays;
+    }
+    @Override
+    public void display(){
+        System.out.println("---perishable product detail---");
+        super.display();
+        System.out.println("Shelflifedays:"+Shelflifedays);
+    }
