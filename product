@@ -1,0 +1,42 @@
+public class Product {
+    private int id;
+    private String name;
+    private double unitprice;
+    
+    public Product(int i,String n,double u){
+        id=i;
+        name=n;
+        unitprice=u;
+    }
+    public void setid(int i){
+          id=i;
+    }
+    public void setname(String n){
+        name=n;
+    }
+    public void setunitprice(double u){
+        unitprice=u;
+    }
+    public String getname(){
+        return name;
+    }
+    public int getid(){ 
+        return id;
+    }
+    public double getunitprice(){
+        return unitprice;
+    }
+    
+    public void display(){
+        
+        System.out.println("product id:"+id);
+        System.out.println("product name:"+name);
+        System.out.println("product unitprice:"+unitprice);
+    }
+}   
+        
+        
+    
+        
+    
+
